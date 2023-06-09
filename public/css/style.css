@@ -1,0 +1,33 @@
+@import url("loguin.css");
+
+
+ body{
+    font-family: sans-serif;
+    background-image: url(../img/RHA_6780.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} 
+
+.logo-nav{
+    width: 3rem;
+    height: 2.5rem;
+
+}
+@media(max-width: 768px){
+    .main-css{
+        height: 75vh ;
+    }
+    
+
+}
+
+@media(min-width: 768px){
+    .header-custom{
+        height: 25vh;
+    }
+
+    .main-css{
+        height: 53vh;
+    }
+}

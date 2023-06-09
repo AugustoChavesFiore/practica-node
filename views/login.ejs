@@ -1,14 +1,16 @@
-<!doctype html>
-<html lang="en" data-bs-theme="ligth">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Municipalidad de Formosa</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
     <link rel="stylesheet" href="../css/style.css">
+ 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  </head>
-  <body>
-    <header class="header-custom">
+</head>
+<body>
+  <header >
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
               <a class="navbar-brand" href="index.html">
@@ -34,9 +36,9 @@
                       Ingresar
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/login">Iniciar Sesión</a></li>
+                        <li><a class="dropdown-item" href="login.html">Iniciar Sesión</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="/registro">Registro</a></li>
+                        <li><a class="dropdown-item" href="registro.html">Registro</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -45,28 +47,33 @@
             </div>
           </nav>
 
-    </header>
+  </header>
 
-    <main class="container my-5 main-css">    
-        <article class="container text-center bg-dark bg-opacity-75  rounded-4  text-white p-2 ">
-            <h1 class="m-1">Tasa Utilización Vía Pública</h1>
-            <br>
-            <section>
-                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora similique, eveniet ex, quod fuga consequuntur ab officiis quos cumque eos inventore ad eius enim vel, quam minus veritatis laudantium illum.</p>
-           </section>
-           <section> 
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod iusto veniam itaque delectus ea! Voluptatum laudantium deleniti dolor quos eum, quo a odio adipisci, magni similique rem facere esse?</p>
-           </section>
+  <main class="container main-loguin">
+        <form  action="/login" method="POST" class=" text-center bg-dark bg-opacity-75 border border-dark rounded-4  text-white p-2"   >      
+           <!-- <label for="email" class="form-label">Correo electronico</label>
+                <input class="form-control form-control-sm" type="text" id="email" required>
+                 -->
+                <label for="user" class="form-label">Usuario</label>
+                <input class="form-control form-control-sm" type="text" name="user" id="user" required>
+
+                <label for="password" class="form-label">Contraseña</label>
+                <input class="form-control form-control-sm" type="password" name="pass" id="password" required>
+                <label for="password" id="passwordHelpBlock" class="form-text text-white-50"> La contraseña debe tener de 8 a 12 caracteres</label>
+                
+                 <br>
+                <button type="submit" class="btn btn-light me-3">Inicio Sesión</button>
+
            
+        </form>
 
-        </article>
+  </main>
 
-          
-    </main>
+  <footer class="text-center py-1  bg-body-tertiary bg-opacity-25 fixed-bottom">
+      <p>&#169; Derechos Reservados</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <footer class="text-center py-1  bg-body-tertiary bg-opacity-25 ">
-        <p>&#169; Derechos Reservados</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
 </html>

@@ -1,0 +1,13 @@
+/* my-5 d-flex justify-content-center align-items-center    */
+
+
+.main-loguin{
+        margin-top: 10%;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+} 
+

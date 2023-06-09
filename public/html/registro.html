@@ -49,38 +49,46 @@
 </header>
 
     <main class="container d-flex justify-content-center align-items-center my-5 my-lg-2" >
-      <form action="/registro" method="POST" id="formulario_registro" class=" form-control form-control-sm   text-center bg-dark bg-opacity-75 border border-dark rounded-4  text-white  px-4" style="width: 75%;"  >
+      <form  id="formulario_registro" class=" form-control form-control-sm   text-center bg-dark bg-opacity-75 border border-dark rounded-4  text-white  px-4" style="width: 75%;"  >
+            <div class="">
               <label for="nombre" class="form-label">Nombre</label>
-              <input class="form-control form-control-sm" type="text" id="nombre" name="nombre" required>
+              <input class="form-control form-control-sm" type="text" id="nombre" required>
          
-              <!-- <label for="apellido" class="form-label">Apellido</label>
+              <label for="apellido" class="form-label">Apellido</label>
               <input class="form-control form-control-sm" type="text" id="apellido" required>
           
               <label for="dni" class="form-label">DNI</label>
               <input class="form-control form-control-sm" type="text" id="dni" required>
            
               <label for="foto" class="form-label">Foto</label>
-              <input class="form-control form-control-sm" type="file" id="foto"> -->
+              <input class="form-control form-control-sm" type="file" id="foto">
 
-           
-           
-              <!-- <label for="email" class="form-label">Correo electronico</label>
-              <input class="form-control form-control-sm" type="text" id="email" required> -->
+            </div>
+            <div class="">
+              <label for="email" class="form-label">Correo electronico</label>
+              <input class="form-control form-control-sm" type="text" id="email" required>
 
               <label for="user" class="form-label">Usuario</label>
-              <input class="form-control form-control-sm" type="text" id="user" name='user' required>
+              <input class="form-control form-control-sm" type="text" id="user" required>
 
               <label for="password" class="form-label">Contraseña</label>
-              <input class="form-control form-control-sm" type="password" id="password" name="pass" required>
+              <input class="form-control form-control-sm" type="password" id="password" required>
               <label for="password" id="passwordHelpBlock" class="form-text text-white-50"> La contraseña debe tener de 8 a 12 caracteres</label>
               <br>
-              <!-- <label for="pin" class="form-label">PIN</label>
+              <label for="pin" class="form-label">PIN</label>
               <input class="form-control form-control-sm" type="password" id="pin" required>
-              <label for="pin" id="passwordHelpBlock" class="form-text text-white-50"> La contraseña debe tener de 4 caracteres</label> -->
+              <label for="pin" id="passwordHelpBlock" class="form-text text-white-50"> La contraseña debe tener de 4 caracteres</label>
 
-              <button type="submit" class="btn btn-light me-3" >Registrarse</button>
-    
-            
+              <button type="submit" class="btn btn-light me-3" id="btn-registro">Registrarse</button>
+              
+              <div class="d-flex justify-content-center align-items-center mt-1">
+                <form action="login.html" class=" ">
+                  <button type="submit" class="btn btn-light" >Inicio Sesión</button>
+                </form>
+
+              </div>
+              </div>
+            </div> 
       </form>
     </main>
 
