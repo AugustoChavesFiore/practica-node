@@ -13,7 +13,7 @@ try {
     let passHash=await bcryptjs.hash(pass,8);
     conexion.query('INSERT INTO users SET ?',{name:name,user:user , pass:passHash},(error,results)=>{
         if(error){console.log(error)};
-        res.redirect('/');
+        res.redirect('/login');
     })
 } catch (error) {
     console.log(error);
@@ -37,7 +37,7 @@ exports.login= async(req,res)=>{
                 }else{
                     //inicio ok
                     
-                    res.redirect('/');
+                    res.redirect('/consultas');
                     
                     // const id= results[0].id;
                     // cons token= jwt.sign()
