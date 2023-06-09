@@ -3,7 +3,7 @@ const router=express.Router();
 const conexion=require('../database/db');
 
 const authControllers=require('../controllers/authControllers');
-
+//views
 router.get('/',(req,res)=>{
     
     res.render('index.ejs');
@@ -14,7 +14,12 @@ router.get('/login',(req,res)=>{
 router.get('/registro',(req,res)=>{
     res.render('registro.ejs');
 });
-
+router.get('/consultas',(req,res)=>{
+    res.render('consultas.ejs');
+});
+router.get('/pagos',(req,res)=>{
+    res.render('pagos.ejs');
+});
 //controller
 
 router.post('/registro',authControllers.registro);
