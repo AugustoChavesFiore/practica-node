@@ -12,7 +12,7 @@ router.get('/login',(req,res)=>{
     res.render('login.ejs',{alert:false});
 });
 router.get('/registro',(req,res)=>{
-    res.render('registro.ejs');
+    res.render('registro.ejs',{alert:false});
 });
 router.get('/consultas',(req,res)=>{
     res.render('consultas.ejs');

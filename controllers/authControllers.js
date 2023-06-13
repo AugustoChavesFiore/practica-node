@@ -7,14 +7,13 @@ const {promisufy}= require('util');
 exports.registro=async(req,res)=>{
 
 try {
-    const nombreApellido=req.body.nombre
+    const nombreApellido=req.body.nombre;
     const DNI= req.body.dni;
     const email= req.body.email;
     const user= req.body.user;
     const pass= req.body.pass;
     const pin= req.body.pin;
     let passHash=await bcryptjs.hash(pass,10);
-
     conexion.query('INSERT INTO users SET ?',{nombre_apellido:nombreApellido, usuario:user,dni:DNI,email:email, password:passHash, pin:pin },(error,results)=>{
         if(error){
             console.log(error)}
