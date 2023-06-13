@@ -1,13 +1,12 @@
 const express=require('express');
 const dotenv=require('dotenv');
-// const coockieParse=require('cookie-parser')
 
 
 const app=express();
 
 
-
 //setting
+app.set('view engine', 'ejs');
 app.set('./views','ejs');
 //public
 app.use(express.static('public'));
@@ -17,10 +16,6 @@ app.use(express.json());
 
 //variables de entorno
 dotenv.config({path:'./env/.env'});
-
-
-// para trabajar con las cookies
-// app.use(coockieParse);
 
 //llamar al router
 app.use('/',require('./routes/router'))
