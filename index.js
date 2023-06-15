@@ -1,6 +1,6 @@
 const express=require('express');
 const dotenv=require('dotenv');
-
+const morgan=require('morgan');
 
 const app=express();
 
@@ -20,7 +20,7 @@ dotenv.config({path:'./env/.env'});
 //llamar al router
 app.use('/',require('./routes/router'))
 
-
+app.use(morgan('dev'));
 
 
 app.listen(5000,()=>{
